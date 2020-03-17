@@ -27,15 +27,14 @@ class App extends Component {
 
 		return (
 			<div className="App">
-				<header className="App-header">
-					<div className="App">
-						<SearchBox
-							placeholder="search monster"
-							handelChange={(e) => this.setState({ searchField: e.target.value })}
-						/>
-						<CardList monsters={filteredMonsters} />
-					</div>
-				</header>
+				<div className="App">
+					<h1> Monster Roldex </h1>
+					<SearchBox
+						placeholder="search monster"
+						handelChange={(e) => this.setState({ searchField: e.target.value })}
+					/>
+					<CardList monsters={filteredMonsters} />
+				</div>
 			</div>
 		);
 	}
